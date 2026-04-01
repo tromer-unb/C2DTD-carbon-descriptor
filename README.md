@@ -108,7 +108,7 @@ This project is licensed under the MIT License.
 
 If you use this code, please cite:
 
-*C2DTD – CARBON-2D Topological Descriptor (2025)*
+*C2DTD – CARBON-2D Topological Descriptor (2026) - The link to the article will be made available upon publication.*
 
 ---
 
