@@ -19,6 +19,25 @@ The descriptor is:
 
 ---
 
+## ⚠️ Important Note on Interpretability
+
+Although the descriptor is physically meaningful, the raw output (`descriptors.csv`) is **high-dimensional and not directly interpretable by inspection**.
+
+To address this, this repository provides a dedicated script:
+
+```bash
+python interpretability.py
+```
+
+This script transforms the descriptor into **human-interpretable visual and statistical insights**, enabling:
+
+* Understanding of dataset-level topology (e.g., dominance of hexagonal rings)
+* Structure-by-structure analysis of ring distributions
+* Detection of disorder, defects, and reconstruction patterns
+* Visualization of how topology varies across the dataset
+
+---
+
 ## ⚙️ Requirements
 
 * Python 3.x
@@ -52,18 +71,20 @@ descriptors.csv
 
 ---
 
-### 2. Generate plots
+### 2. Interpret the dataset (ESSENTIAL STEP)
 
 ```bash
-python your_plot_script.py
+python interpretability.py
 ```
 
 Outputs:
 
-* Average ring distribution
-* Per-structure plots
-* Heatmap
-* Statistical summary
+* 📊 Average ring distribution (global topology)
+* 🧩 Per-structure ring distributions
+* 🌡️ Heatmap of structural diversity
+* 📄 Statistical summary of the dataset
+
+This step is **essential** to extract physical insight from the descriptor.
 
 ---
 
@@ -96,3 +117,4 @@ If you use this code, please cite:
 * Integration with ML pipelines
 * Extension to other 2D materials
 * Large-scale screening
+
