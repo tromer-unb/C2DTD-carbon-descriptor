@@ -41,7 +41,7 @@ pip install numpy pandas matplotlib networkx ase
 ### 1. Generate descriptors
 
 ```bash
-python your_descriptor_script.py
+python descriptor_c2dtd.py
 ```
 
 Output:
